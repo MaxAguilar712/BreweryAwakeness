@@ -23,7 +23,7 @@ const findProduct = (order, allProducts) => {
 const findEmployee = (order, allEmployees) => {
     let orderEmployee = ""
 
-    for (const employee in allEmployees) {
+    for (const employee of allEmployees) {
         if (employee.id === order.employeeId) {
             orderEmployee = employee
         }
@@ -47,4 +47,5 @@ export const Orders = () => {
 
     return html
 }
+
 
